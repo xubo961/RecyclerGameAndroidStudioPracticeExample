@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     >
 
     <androidx.cardview.widget.CardView
@@ -14,7 +14,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="15dp"
-        app:cardElevation="5dp"
+        android:backgroundTint="#a462f3"
+        app:cardElevation="10dp"
         app:cardCornerRadius="15dp">
 
         <LinearLayout
@@ -42,6 +43,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="15sp"
+                        android:textColor="@color/black"
                         android:text="Evento Histórico" />
 
                     <LinearLayout
@@ -54,6 +56,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:textColor="@color/black"
                             android:text="1500" />
 
                         <TextView
@@ -62,7 +65,9 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:layout_gravity="center"
+                            android:textColor="@color/black"
                             android:text="Europa" />
+
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
