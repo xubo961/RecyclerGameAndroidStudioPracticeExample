@@ -1,3 +1,52 @@
 <resources>
     <string name="app_name">MusicRecycler</string>
+    <string-array name="historic_event_names">
+        <item>Caída del Imperio Romano</item>
+        <item>Primer ataque vikingo</item>
+        <item>Coronación de Carlomagno</item>
+        <item>Toma de Constantinopla</item>
+        <item>Invención de la imprenta</item>
+        <item>Llegada de los castellanos a América</item>
+        <item>Inicio de la Guerra de los 30 años</item>
+        <item>Fin de la dinastía Ming</item>
+        <item>Paz de Westfalia</item>
+        <item>Independencias de las 13 colonias</item>
+        <item>Revolución Francesa</item>
+        <item>Congreso de Viena</item>
+        <item>Comuna de Paris</item>
+        <item>Revolución Rusa</item>
+        <item>Atentado de las torres genelas</item>
+    </string-array> <string-array name="historic_event_dates">
+        <item>476</item>
+        <item>787</item>
+        <item>800</item>
+        <item>1453</item>
+        <item>1453</item>
+        <item>1492</item>
+        <item>1618</item>
+        <item>1644</item>
+        <item>1648</item>
+        <item>1766</item>
+        <item>1789</item>
+        <item>1814</item>
+        <item>1871</item>
+        <item>1917</item>
+        <item>2001</item>
+    </string-array> <string-array name="historic_event_locations">
+        <item>Italia</item>
+        <item>Gran Bretaña</item>
+        <item>Aquisgrán</item>
+        <item>Constantinopla</item>
+        <item>Sacro Imperio Romano Germánico</item>
+        <item>América</item>
+        <item>Europa</item>
+        <item>China</item>
+        <item>Europa</item>
+        <item>América</item>
+        <item>Francia</item>
+        <item>Viena</item>
+        <item>París</item>
+        <item>Rusia</item>
+        <item>Estados Unidos</item>
+    </string-array>
 </resources>
