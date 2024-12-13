@@ -41,14 +41,16 @@ public class MainActivity extends AppCompatActivity {
 
     private void setHistoricEvents() {
         String [] eventNames = getResources().getStringArray(R.array.historic_event_names);
-        String [] eventDates = getResources().getStringArray(R.array.historic_event_dates);
-        String [] eventLocations = getResources().getStringArray(R.array.historic_event_locations);
+        String [] eventQuest1 = getResources().getStringArray(R.array.historic_event_quest1);
+        String [] eventQuest2 = getResources().getStringArray(R.array.historic_event_quest2);
+        String [] eventQuest3 = getResources().getStringArray(R.array.historic_event_quest3);
 
         for (int i = 0; i < eventNames.length; i++) {
             historicEvents.add(new HistoricEventModel(
                     eventNames[i],
-                    eventDates[i],
-                    eventLocations[i]
+                    eventQuest1[i],
+                    eventQuest2[i],
+                    eventQuest3[i]
                     )
             );
         }

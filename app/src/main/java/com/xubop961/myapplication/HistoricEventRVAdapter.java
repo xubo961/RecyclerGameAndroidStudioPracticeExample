@@ -36,12 +36,14 @@ public class HistoricEventRVAdapter extends RecyclerView.Adapter<HistoricEventRV
     public void onBindViewHolder(@NonNull HistoricEventRVAdapter.MyViewHolder holder, int position) {
 
         String eventName = historicEventModels.get(position).getEventName();
-        String eventDate = historicEventModels.get(position).getEventDate();
-        String eventLocation = historicEventModels.get(position).getEventLocation();
+        String eventQuest1 = historicEventModels.get(position).geteventQuest1();
+        String eventQuest2 = historicEventModels.get(position).geteventQuest2();
+        String eventQuest3 = historicEventModels.get(position).getEventQuest3();
 
         holder.tvEventName.setText(eventName);
-        holder.tvEventDate.setText(eventDate);
-        holder.tvEventLocation.setText(eventLocation);
+        holder.tvQuest1.setText(eventQuest1);
+        holder.tvQuest2.setText(eventQuest2);
+        holder.tvQuest3.setText(eventQuest3);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,7 +51,7 @@ public class HistoricEventRVAdapter extends RecyclerView.Adapter<HistoricEventRV
                 MaterialAlertDialogBuilder materialAlertDialogBuilder = new MaterialAlertDialogBuilder(context)
                         .setIcon(R.drawable.book_logo)
                         .setTitle(eventName)
-                        .setMessage("Este evento sucedió en el año " + eventDate + ".\n ¿Es correcto?")
+                        .setMessage("Este evento sucedió en el año " + ".\n ¿Es correcto?")
                         .setPositiveButton("Sí", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
@@ -75,13 +77,14 @@ public class HistoricEventRVAdapter extends RecyclerView.Adapter<HistoricEventRV
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView tvEventName, tvEventDate, tvEventLocation;
+        TextView tvEventName, tvQuest1, tvQuest2, tvQuest3;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             tvEventName = itemView.findViewById(R.id.eventName);
-            tvEventDate = itemView.findViewById(R.id.eventDate);
-            tvEventLocation = itemView.findViewById(R.id.eventLocation);
+            tvQuest1 = itemView.findViewById(R.id.eventQuest1);
+            tvQuest2 = itemView.findViewById(R.id.eventQuest2);
+            tvQuest3 = itemView.findViewById(R.id.eventQuest3);
         }
     }
 
